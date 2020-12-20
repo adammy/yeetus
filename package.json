@@ -1,0 +1,41 @@
+{
+  "name": "yeetus",
+  "version": "1.0.0",
+  "description": "For those moments when throwing an error isn't good enough.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run tsc",
+    "publish": "npm run build && npm publish",
+    "lint": "eslint . --ext .ts",
+    "test": "mocha -r ts-node/register src/**/*.test.ts",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adammy/yeetus.git"
+  },
+  "keywords": [
+    "yeet",
+    "throw",
+    "throwable",
+    "error"
+  ],
+  "author": "Adam MacDonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adammy/yeetus/issues"
+  },
+  "homepage": "https://github.com/adammy/yeetus#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.16.0",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
